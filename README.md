@@ -1,71 +1,282 @@
-# AI-Powered EV Driving Efficiency Optimizer
+# 🚗 AI-Powered EV Driving Efficiency Optimizer
 
-## Overview
+An AI-based Machine Learning project that predicts **Electric Vehicle (EV) energy consumption** based on driving behavior and provides **personalized driving recommendations** to improve battery efficiency.
 
-The AI-Powered EV Driving Efficiency Optimizer is a Machine Learning-based application that analyzes driving behavior and predicts electric vehicle energy consumption. The system provides intelligent recommendations to improve driving efficiency and maximize EV battery range.
+---
 
-## Features
+## 📌 Project Overview
 
-* Predicts EV energy consumption using Machine Learning
-* Analyzes driving parameters such as speed, terrain, braking, and acceleration
-* Provides AI-based driving recommendations
-* Uses Random Forest Regression for prediction
-* Interactive command-line interface
+Electric Vehicles are becoming increasingly popular, but driving behavior significantly affects battery performance and driving range.
 
-## Technologies Used
+This project uses **Machine Learning (Random Forest Regression)** to predict energy consumption based on driving parameters such as:
 
-* Python
-* Pandas
-* NumPy
-* Scikit-learn
-* Joblib
-* Machine Learning
-* Random Forest Regression
+- Vehicle Speed
+- Terrain
+- Braking Level
+- Acceleration Level
 
-## Project Structure
+The system then provides AI-generated driving recommendations to help drivers maximize battery efficiency.
 
+---
+
+## 🎯 Objectives
+
+- Predict EV energy consumption using Machine Learning.
+- Analyze driving behavior.
+- Suggest intelligent driving tips.
+- Demonstrate AI applications in Electric Vehicles.
+
+---
+
+## 🛠 Technologies Used
+
+| Technology | Purpose |
+|------------|---------|
+| Python | Programming Language |
+| Pandas | Data Processing |
+| NumPy | Numerical Computing |
+| Scikit-learn | Machine Learning |
+| Joblib | Save & Load ML Model |
+| VS Code | Development Environment |
+| Git & GitHub | Version Control |
+
+---
+
+## 📂 Project Structure
+
+```
 AI-EV-Efficiency-Optimizer/
+│
+├── data/
+│   └── driving_data.csv
+│
+├── models/
+│   └── ev_model.pkl
+│
+├── src/
+│   ├── train_model.py
+│   ├── predictor.py
+│   └── driving_tips.py
+│
+├── requirements.txt
+└── README.md
+```
 
-data/
+---
 
-* driving_data.csv
+## ⚙ Features
 
-models/
+✔ Machine Learning Model Training
 
-* ev_model.pkl
+✔ Energy Consumption Prediction
 
-src/
+✔ Intelligent Driving Recommendations
 
-* train_model.py
-* predictor.py
-* driving_tips.py
+✔ Random Forest Regression
 
-## How to Run
+✔ Easy Command-Line Interface
 
-1. Create a virtual environment:
-   python -m venv venv
+---
 
-2. Activate the environment:
-   Windows:
-   venv\Scripts\activate
+## 📊 Dataset
 
-3. Install dependencies:
-   pip install -r requirements.txt
+The dataset contains simulated EV driving data with the following features:
 
-4. Run the training script:
-   cd src
-   python train_model.py
+| Feature | Description |
+|----------|-------------|
+| Speed | Vehicle speed (km/h) |
+| Terrain | Flat, Uphill, Downhill |
+| Braking | Braking intensity (1–5) |
+| Acceleration | Acceleration level (1–5) |
+| Energy Consumption | Battery consumption (kWh/100 km) |
 
-5. Run the predictor:
-   python predictor.py
+---
 
-## Future Improvements
+## 🧠 Machine Learning Model
 
-* Web dashboard using Streamlit
-* Real-time EV sensor integration
-* Larger datasets for better prediction accuracy
-* Advanced Deep Learning models
+Algorithm Used:
 
-## Author
+**Random Forest Regressor**
 
-Ishika Sarkar
+Evaluation Metrics:
+
+- Mean Absolute Error (MAE)
+- R² Score
+
+Example Result:
+
+```
+Mean Absolute Error : 1.83 kWh/100 km
+
+R² Score : 0.90
+```
+
+---
+
+## 🚀 Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/Sarkarishika/AI-EV-Efficiency-Optimizer.git
+```
+
+Go to the project directory
+
+```bash
+cd AI-EV-Efficiency-Optimizer
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## ▶ Train the Model
+
+```bash
+cd src
+
+python train_model.py
+```
+
+This generates:
+
+```
+models/ev_model.pkl
+```
+
+---
+
+## ▶ Run Prediction
+
+```bash
+python predictor.py
+```
+
+Example:
+
+```
+Enter vehicle speed (km/h): 60
+
+Terrain:
+0 = Flat
+1 = Uphill
+2 = Downhill
+
+Enter terrain: 0
+
+Enter braking level: 2
+
+Enter acceleration level: 3
+```
+
+Output:
+
+```
+Predicted Energy Consumption
+
+14.52 kWh/100 km
+
+AI Driving Recommendations
+
+✔ Drive smoothly
+
+✔ Avoid aggressive acceleration
+
+✔ Maintain constant speed
+
+✔ Use regenerative braking
+```
+
+---
+
+## 💡 AI Driving Recommendations
+
+The system provides personalized suggestions such as:
+
+- Reduce excessive acceleration.
+- Maintain steady speed.
+- Avoid harsh braking.
+- Drive efficiently on uphill terrain.
+- Improve battery usage.
+
+---
+
+## 📈 Future Improvements
+
+- Real-time IoT Sensor Integration
+- Battery Temperature Prediction
+- State of Charge (SOC) Estimation
+- Battery Health Monitoring
+- Streamlit Dashboard
+- Mobile Application
+- Cloud Deployment
+- Deep Learning Model
+- Live Vehicle Data
+
+---
+
+## 📸 Sample Output
+
+```
+========== EV Efficiency Predictor ==========
+
+Vehicle Speed : 60 km/h
+
+Terrain : Flat
+
+Braking : 2
+
+Acceleration : 3
+
+----------------------------------------
+
+Predicted Energy Consumption
+
+14.52 kWh/100 km
+
+----------------------------------------
+
+AI Recommendations
+
+✔ Smooth acceleration
+
+✔ Good braking habits
+
+✔ Maintain steady speed
+
+✔ Efficient driving
+```
+
+---
+
+## 🎓 Internship Project
+
+This project was developed as part of an internship to demonstrate practical applications of:
+
+- Machine Learning
+- Data Analytics
+- Electric Vehicle Technology
+- Python Programming
+
+---
+
+## 👩‍💻 Author
+
+**Ishika Sarkar**
+
+GitHub:
+https://github.com/Sarkarishika
+
+LinkedIn:
+https://www.linkedin.com/in/ishika-sarkar-1184aa267/
+
+---
+
+## ⭐ Support
+
+If you found this project helpful, please consider giving it a ⭐ on GitHub.
